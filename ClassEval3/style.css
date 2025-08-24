@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Parisienne", cursive;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #f1f1f1;
+}
+
+.card {
+  position: relative;
+  width: 70%;
+  max-width: 600px;
+  height: 86%;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.card-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardbg_top {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 90%;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.top_img {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: auto;
+  z-index: 3;
+}
+
+.footer_img {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: auto;
+  transform: rotate(180deg);
+  z-index: 3;
+}
+
+.content {
+  position: relative;
+  z-index: 4;
+  max-width: 90%;
+  text-align: center;
+  padding: 10px;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+  overflow: hidden;
+}
+
+.content h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: rgb(46, 51, 48);
+}
+
+.content p {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: rgb(95, 104, 98);
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: rgb(46, 51, 48);
+}
+
+
+@media (max-width: 600px) {
+
+    .card {
+    width: 90%;
+    min-height: fit-content;
+  }
+
+  .content h1 {
+    font-size: 1.5rem;
+  }
+
+  .content h2 {
+    font-size: 1.2rem;
+  }
+
+  .content p {
+    font-size: 0.9rem;
+  }
+}
