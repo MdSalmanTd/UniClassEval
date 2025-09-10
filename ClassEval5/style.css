@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 90%;
+    height: 90%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+.right{
+    width: 45%;
+    height: 45%;
+    border: 2px solid black;
+    position: relative;
+}
+
+.box{
+    padding: 10px;
+    left: 10%;
+    top: 10%;
+    background-color: lightblue;
+    position: absolute;
+    font-size: 20px;
+}
+
+.circle1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightgreen;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+.circle2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightcoral;
+    position: absolute;
+    right: 5%;
+    top: -10%;
+}
+
+.circle3{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(35, 194, 219);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -5%;
+    bottom: -20%;
+}
+
+.circle3 img{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.bottom{
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.gradient-bar{
+    width: 70%;
+    height: 50px;
+    background: linear-gradient(90deg, #efd5ff 0%, #2733d2 100%);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
